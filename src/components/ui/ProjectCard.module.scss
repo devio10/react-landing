@@ -47,3 +47,19 @@
     justify-content: center;
     align-items: center;
 }
+.project {
+    display: flex;
+    gap: 32px;
+}
+.descriptionSection {
+    flex: 1;
+    padding-top: 32px;
+    h2 {
+        font-size: 52px;
+        font-family: "Inter", Helvetica, Arial, sans-serif;
+        margin: 0;
+    }
+}
+.projectStack {
+    font-size: 16px;
+}

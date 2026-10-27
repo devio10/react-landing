@@ -5,11 +5,11 @@ function HeroStrip() {
     return (
         <>
             <div className={styles.herostrip}>
-                <span>Frontend Development</span>
+                <span>Game Developer</span>
                 <IconStar />
-                <span>Game Development</span>
+                <span>Frontend Developer</span>
                 <IconStar />
-                <span>Cuddle Generator</span>
+                <span>Tech enthusiast</span>
             </div>
         </>
     )
