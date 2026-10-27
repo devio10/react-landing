@@ -81,10 +81,14 @@
         justify-content: center;
         width: 100%;
         pointer-events: none;
+        transition: .75s ease-out opacity;
         img {
             margin-top: auto;
             height: 85%;
             object-fit: cover;
+        }
+        &.reduceOpacity {
+            opacity: 0.5;
         }
     }
 }

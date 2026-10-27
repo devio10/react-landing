@@ -1,7 +1,10 @@
+import { useState } from "react";
 import LinkButton from "../ui/LinkButton";
 import styles from "./HeroBlock.module.scss"
+import classNames from "class-names";
 
 function HeroBlock() {
+    const [hover, setHover] = useState(false);
     return (
         <main className={styles.heroBlock}>
             <header className={styles.header}>
@@ -19,7 +22,7 @@ function HeroBlock() {
                 <div> </div>
             </div>
             <div className={styles.data}>
-                <div className={styles.title}>
+                <div className={styles.title} onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)}>
                     <img src="/src/assets/DMITRII NOVOSELOV.svg" className={styles.name}></img>
                     <img src="/src/assets/FRONTEND DEVELOPER.svg" className={styles.profession}></img>
                 </div>
@@ -47,7 +50,7 @@ function HeroBlock() {
                     </div>
                 </div>
             </div>
-            <div className={styles.person}>
+            <div className={classNames({[styles.reduceOpacity]: hover}, styles.person)}>
                 <img src="/src/assets/person.png"></img>
             </div>
         </main>

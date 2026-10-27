@@ -12,6 +12,7 @@
   "dependencies": {
     "@fontsource/bebas-neue": "^5.2.7",
     "@fontsource/inter": "^5.2.8",
+    "class-names": "^1.0.0",
     "clsx": "^2.1.1",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
