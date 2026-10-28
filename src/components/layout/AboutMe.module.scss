@@ -1,0 +1,15 @@
+.grid {
+    --columns: 4;
+    --gap: 16px;
+
+    display: grid;
+    gap: var(--gap);
+    grid-template-columns: repeat(var(--columns), minmax(0, 1fr));
+    grid-auto-rows: calc((100cqw - (var(--columns) - 1) * var(--gap)) / var(--columns));
+
+    margin: 0 auto;
+}
+.gridWrap {
+    container-type: inline-size;
+    max-width: 100%;
+}
