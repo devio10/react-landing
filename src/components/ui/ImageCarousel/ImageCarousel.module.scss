@@ -8,10 +8,14 @@
     }
     position: relative;
 }
-.buttons {
+.buttons, .indicator {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    &.indicator {
+        width: calc(100% - 86px);
+        margin: 12px 36px;
+    }
 }
