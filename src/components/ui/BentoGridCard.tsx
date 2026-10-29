@@ -1,4 +1,3 @@
-import type React from "react"
 import styles from "./BentoGridCard.module.scss"
 import type { ComponentPropsWithoutRef } from "react"
 interface BentoGridCardProps extends ComponentPropsWithoutRef<"div"> {
@@ -11,6 +10,7 @@ export default function BentoGridCard({children, columns=1, rows=1, ...props}: B
             <div className={styles.card} style={{
                 gridColumn: `span ${columns}`,
                 gridRow: `span ${rows}`,
+                borderRadius: `${columns*24}px`
             }} {...props}>
                 {children} 
             </div>

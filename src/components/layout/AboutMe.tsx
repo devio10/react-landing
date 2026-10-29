@@ -3,7 +3,7 @@ import styles from "./AboutMe.module.scss"
 import BentoGridCard from "../ui/BentoGridCard";
 import photo1 from "../../assets/photo1.webp";
 import pissing from "../../assets/feo.webp";
-import ImageCarousel from "../ui/ImageCarousel";
+import ImageCarousel from "../ui/ImageCarousel/ImageCarousel";
 export default function AboutMe() {
     return (
         <>
