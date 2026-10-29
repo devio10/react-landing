@@ -1,7 +1,9 @@
 import demovio from "../assets/demovio.svg";
 import procreationBackground from "../assets/waves.png";
 import procreationLogo from "../assets/procreation.png";
-export const projects = [
+import type { Project } from "../types/project";
+
+export const projects: Project[] = [
     {
         title: "Demovio – Minecraft Server companion",
         category: "Web Application",

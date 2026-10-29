@@ -1,10 +1,15 @@
+import type { ComponentPropsWithoutRef, ReactNode } from "react"
 import IconFile from "../icons/IconFile"
 import LinkButton from "./LinkButton"
 import styles from "./ProjectCard.module.scss"
-function ProjectCard({children, category, title, background, stack=[], date, i, onclick, href, image, ...props}) {
+import type { ProjectBase } from "../../types/project"
+interface ProjectCardProps extends ProjectBase, Omit<ComponentPropsWithoutRef<"button">, keyof ProjectBase> {
+    image: ReactNode
+};
+function ProjectCard({children, category, title, background, stack=[], date, onClick, href, image, ...props}: ProjectCardProps) {
     return (
         <div className={styles.project}>
-            <button className={styles.card} onClick={onclick} {...props}>
+            <button className={styles.card} onClick={onClick} {...props}>
                 <div className={styles.imagesContainer}>
                     {background && <img className={styles.background} src={background} />}
                     {image}

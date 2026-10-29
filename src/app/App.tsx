@@ -6,7 +6,6 @@ import ProjectsOverview from '../components/layout/ProjectsOverview'
 import AboutMe from '../components/layout/AboutMe'
 
 function App() {
-  // const [count, setCount] = useState(0)
 
   return (
     <>

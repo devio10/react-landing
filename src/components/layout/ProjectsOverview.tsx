@@ -1,14 +1,8 @@
-import { useEffect } from "react"
 import { projects } from "../../data/projects"
 import ProjectCard from "../ui/ProjectCard"
 import styles from "./ProjectsOverview.module.scss"
 import layoutStyles from "./layout.module.scss"
 function ProjectsOverview() {
-
-    useEffect(() => {
-        console.log(projects);
-    }, []);
-
     return (
         <>
             <section className={layoutStyles.contentWidth}>

@@ -1,10 +1,10 @@
 import { useState } from "react";
 import LinkButton from "../ui/LinkButton";
-import styles from "./HeroBlock.module.scss"
-import classNames from "class-names";
+import styles from "./HeroBlock.module.scss";
+import classNames from "classnames";
 
 function HeroBlock() {
-    const [hover, setHover] = useState(false);
+    const [hover, setHover] = useState<boolean>(false);
     return (
         <main className={styles.heroBlock}>
             <header className={styles.header}>
