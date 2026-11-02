@@ -15,6 +15,10 @@ export default function Footer() {
                             <button className={styles.emailButton}>devio10@outlook.com</button>
                         </div>
                     </div>
+                    <div className={styles.links}>
+                        <a href="https://www.linkedin.com/in/devio10/">LinkedIn</a>
+                        <a href="https://www.instagram.com/devio.10/">Instagram</a>
+                    </div>
                 </div>
             </div>
         </footer>
