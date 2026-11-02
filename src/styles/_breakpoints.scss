@@ -1,0 +1,22 @@
+@use "sass:map";
+
+$breakpoints: (
+    sm: 640px,
+    md: 768px,
+    lg: 1024px,
+    xl: 1280px,
+    2xl: 1440px
+);
+
+@mixin up($key) {
+    @media (min-width: map.get($breakpoints, $key)) {
+        @content;
+    }
+}
+
+// до ширины (desktop-first)
+@mixin down($key) {
+    @media (max-width: map.get($breakpoints, $key) - 0.02px) {
+        @content;
+    }
+}

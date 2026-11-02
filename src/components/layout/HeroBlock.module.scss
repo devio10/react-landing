@@ -1,5 +1,4 @@
 .heroBlock {
-    /* background-color: red; */
     width: 100%;
     min-height: 100vh;
     background-color: #444638;
@@ -97,7 +96,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     padding: 32px 32px 0 32px;
     position: absolute;
-    z-index: 2;
+    z-index: 3;
     width: calc(100% - 64px);
     h1 {
         font-size: 26px;
@@ -121,6 +120,8 @@
     font-family: 'Bebas Neue';
     padding: 0;
     width: fit-content;
+    color: #D0CBB1;
+    cursor: pointer;
     &.headerHireLink {
         border-bottom: 1px solid #D0CBB1;
     }
