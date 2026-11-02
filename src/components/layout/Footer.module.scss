@@ -1,0 +1,35 @@
+.footer {
+    background-color: rgb(120, 86, 62);
+    margin: 0;
+}
+.footerContent {
+    max-width: 1440px;
+}
+.profilePic {
+    width: 56px;
+    height: 56px;
+    border-radius: 100%;
+    object-fit: cover;
+    background-color: black;
+}
+.infoRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    > div {
+        display: flex;
+        align-items: center;
+    }
+}
+.name {
+    font-size: 24px;
+    // color: white;
+    margin-left: 16px;
+}
+.emailButton {
+    display: flex;
+    margin: 2px 0 0 16px;
+    background: none;
+    border: none;
+    // color: white;
+}
