@@ -16,6 +16,9 @@
                 background-color: rgb(120,86,62);
             }
         }
+        @include bp.down(lg) {
+            grid-template-columns: 4fr 3fr 4fr;
+        }
     }
     .data {
         z-index: 2;
@@ -81,6 +84,7 @@
         width: 100%;
         pointer-events: none;
         transition: .75s ease-out opacity;
+
         img {
             margin-top: auto;
             height: 85%;
@@ -88,6 +92,13 @@
         }
         &.reduceOpacity {
             opacity: 0.5;
+        }
+        @include bp.down(lg) {
+            height: 75%;
+
+            &.reduceOpacity {
+                opacity: 1;
+            }
         }
     }
 }

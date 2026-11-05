@@ -1,4 +1,5 @@
 import classNames from "classnames";
+import { useMediaQuery } from "../../hooks/useMediaQuery"
 
 import layoutStyles from "./layout.module.scss"
 import styles from "./AboutMe.module.scss"
@@ -41,6 +42,8 @@ export default function AboutMe() {
             </li>
         )
     }
+
+    const isBelowXl = useMediaQuery("(max-width: 1279.98px)");
     return (
         <>
             <section className={layoutStyles.contentWidth}>
@@ -48,7 +51,7 @@ export default function AboutMe() {
                 <div className={styles.gridWrap}>
                     <div className={styles.grid}>
                     <BentoGridCard columns={2} rows={2}>
-                        <ImageCarousel images={[photo2, photo1, pissing]} />
+                        <ImageCarousel images={[photo1, photo2, pissing]} />
                     </BentoGridCard>
                     <BentoGridCard>
                         <div className={styles.cardColumnLayout}>
@@ -63,7 +66,7 @@ export default function AboutMe() {
                             <span className={styles.cardTextSmall}>and counting...</span>
                         </div>
                     </BentoGridCard>
-                    <BentoGridCard rows={2}>
+                    <BentoGridCard rows={2} columns={isBelowXl ? 2 : 1}>
                         <div className={classNames(styles.cardColumnLayout, styles.cardStack)}>
                             <h3 className={styles.cardTitleSmall}>I have experience with</h3>
                             <ul className={styles.list}>
@@ -128,6 +131,7 @@ export default function AboutMe() {
                             </div>
                         </div>
                     </BentoGridCard>
+                    
                 </div>
                 </div>
                 <div className={styles.cvButton}>
