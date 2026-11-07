@@ -6,7 +6,7 @@ interface PopupContextValue {
     open: (name: Exclude<PopupName, null>) => void;
     close: () => void;
 }
-const PopupContext = createContext <PopupContextValue | null>(null);
+export const PopupContext = createContext <PopupContextValue | null>(null);
 
 export function PopupProvider ({children}: {children: React.ReactNode}) {
     const [popup, setPopup] = useState <PopupName>(null);
